@@ -8,9 +8,13 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
+//Auth
 const authRoutes = require('./routes/auth');
 app.use('/auth', authRoutes);
 
+//Mongoose
+const connectDB = require('./config/database');
+connectDB();
 
 // Middleware
 app.use(helmet()); // Adds various HTTP headers for security
