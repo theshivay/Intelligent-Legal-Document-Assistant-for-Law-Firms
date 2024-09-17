@@ -24,4 +24,4 @@ const ChatInterface = ({ onSendMessage }) => {
   );
 };
 
-export { SearchBar, DocumentUpload, ChatInterface };
+export default ChatInterface;

@@ -22,3 +22,5 @@ const DocumentUpload = ({ onUpload }) => {
     </form>
   );
 };
+
+export default DocumentUpload;
